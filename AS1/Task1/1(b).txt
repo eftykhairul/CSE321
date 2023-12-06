@@ -1,0 +1,21 @@
+hp-lpc@hp-LPC:~/Desktop/Lab1$ pwd
+/home/hp-lpc/Desktop/Lab1
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cat course.txt
+cat: course.txt: No such file or directory
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cat > course.txt
+Course ID:
+CSE431, ANT101, CSE321
+
+Course Name:
+1. NATURAL LANGUAGE PROCESSING
+2. OPERATING SYSTEMS
+3. INTRODUCTION TO ANTHROPOLOGY
+
+Section: CSE431[01], ANT101[05], CSE321[05]
+^Z
+[3]+  Stopped                 cat > course.txt
+hp-lpc@hp-LPC:~/Desktop/Lab1$ grep -n 'CSE' course.txt
+2:CSE431, ANT101, CSE321
+9:Section: CSE431[01], ANT101[05], CSE321[05]
+hp-lpc@hp-LPC:~/Desktop/Lab1$ 

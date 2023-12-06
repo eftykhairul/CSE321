@@ -1,0 +1,66 @@
+hp-lpc@hp-LPC:~/Desktop$ ls
+Lab1
+hp-lpc@hp-LPC:~/Desktop/Lab1$ touch 20101390_1.txt 20101390_2.txt 20101390_3.txt 20101390_4.txt 
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+20101390_1.txt  20101390_2.txt  20101390_3.txt  20101390_4.txt
+hp-lpc@hp-LPC:~/Desktop/Lab1$ mkdir efty1 efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+20101390_1.txt  20101390_2.txt  20101390_3.txt  20101390_4.txt  efty1  efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1$ mv 20101390_1.txt 20101390_2.txt 20101390_3.txt  efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+20101390_4.txt  efty1  efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cd efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty1$ pwd
+/home/hp-lpc/Desktop/Lab1/efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty1$ cp 20101390_1.txt 20101390_2.txt ~/Desktop/Lab1/efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty1$ cd ..
+hp-lpc@hp-LPC:~/Desktop/Lab1$ mkdir efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+20101390_4.txt  efty1  efty2  efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cp -r efty1 efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cd efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -a
+.  ..  efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -all
+total 12
+drwxrwxr-x 3 hp-lpc hp-lpc 4096 Oct 22 17:15 .
+drwxrwxr-x 5 hp-lpc hp-lpc 4096 Oct 22 17:13 ..
+drwxrwxr-x 2 hp-lpc hp-lpc 4096 Oct 22 17:15 efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -A
+efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -all
+total 12
+drwxrwxr-x 3 hp-lpc hp-lpc 4096 Oct 22 17:15 .
+drwxrwxr-x 5 hp-lpc hp-lpc 4096 Oct 22 17:13 ..
+drwxrwxr-x 2 hp-lpc hp-lpc 4096 Oct 22 17:15 efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -l
+total 4
+drwxrwxr-x 2 hp-lpc hp-lpc 4096 Oct 22 17:15 efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ chmod 755 efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ ls -l
+total 4
+drwxr-xr-x 2 hp-lpc hp-lpc 4096 Oct 22 17:15 efty1
+hp-lpc@hp-LPC:~/Desktop/Lab1/efty3$ cd ..
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+20101390_4.txt  efty1  efty2  efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls -a
+.  ..  20101390_4.txt  efty1  efty2  efty3
+hp-lpc@hp-LPC:~/Desktop/Lab1$ sudo mv efty3 /
+[sudo] password for hp-lpc: 
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls -a
+.  ..  20101390_4.txt  efty1  efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cd /
+hp-lpc@hp-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   efty3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+hp-lpc@hp-LPC:/$ cd ~
+hp-lpc@hp-LPC:~$ ls
+Desktop  Documents  Downloads  Music  Picture  Public  snap  Videos  Movies
+hp-lpc@hp-LPC:~$ cd Desktop/Lab1
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls -a
+.  ..  20101390_4.txt  efty1  efty2
+hp-lpc@hp-LPC:~/Desktop/Lab1$ rm -r *
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls
+hp-lpc@hp-LPC:~/Desktop/Lab1$ ls -a
+.  ..
+hp-lpc@hp-LPC:~/Desktop/Lab1$ 

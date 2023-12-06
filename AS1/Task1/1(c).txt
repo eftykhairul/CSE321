@@ -1,0 +1,9 @@
+hp-lpc@hp-LPC:~/Desktop/Lab1$ pwd
+/home/hp-lpc/Desktop/Lab1
+hp-lpc@hp-LPC:~/Desktop/Lab1$ cd /
+hp-lpc@hp-LPC:/$ pwd
+/
+hp-lpc@hp-LPC:/$ ls -a
+.   bin   cdrom  etc   lib    lib64   lost+found  mnt  proc  run   efty3  srv       sys        tmp  var
+..  boot  dev    home  lib32  libx32  media       opt  root  sbin  snap      swapfile  timeshift  usr
+hp-lpc@hp-LPC:/$ 
